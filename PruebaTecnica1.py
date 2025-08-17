@@ -34,5 +34,24 @@ def Factorial(n):
         return 1
     else:
         return n * Factorial(n-1) 
-algo = Factorial(3)
-print(f"{algo}")
+#algo = Factorial(3)
+#print(f"{algo}")
+
+
+def Fibonacci(n):
+        if n == 0:
+            return 0
+        elif n == 1:
+            return 1 
+        else:
+            return Fibonacci(n-1) + Fibonacci(n-2)
+
+#resultado = Fibonacci(2)
+#print(f"{resultado}")
+
+def Palindromo (palabra):
+    palabra.lower()
+    return palabra == palabra[::-1]
+
+palabra = Palindromo("OSO")
+print(f"{palabra}")
