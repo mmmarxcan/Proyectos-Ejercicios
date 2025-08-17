@@ -65,3 +65,14 @@ def contadorDeVocales(palabras):
             contador += 1
     print (f"Conteo de vocales = {contador}")
 contadorDeVocales("Hola Mundo")
+
+
+def NumeroPrimo(numero):
+    if numero <= 1:
+        return False
+    for i in range(2 , numero):
+        if numero % 2 == 0:
+            return False
+        return True
+print(NumeroPrimo(7))   # True
+print(NumeroPrimo(10)) 
