@@ -74,5 +74,6 @@ def NumeroPrimo(numero):
         if numero % 2 == 0:
             return False
         return True
-print(NumeroPrimo(7))   # True
-print(NumeroPrimo(10)) 
+#print(NumeroPrimo(7))   
+#print(NumeroPrimo(10)) 
+
