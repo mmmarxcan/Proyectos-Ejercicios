@@ -55,3 +55,13 @@ def Palindromo (palabra):
 
 palabra = Palindromo("OSO")
 print(f"{palabra}")
+
+
+def contadorDeVocales(palabras):
+    vocales = 'aeiou'
+    contador = 0
+    for palabra in palabras.lower():
+        if palabra in vocales:
+            contador += 1
+    print (f"Conteo de vocales = {contador}")
+contadorDeVocales("Hola Mundo")
