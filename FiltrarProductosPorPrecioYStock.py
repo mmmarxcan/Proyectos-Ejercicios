@@ -10,5 +10,5 @@ def Filtro(productos):
     for p in productos:
         if p['stock'] > 0 and p['precio'] < 100:
             print(f"Nombre: {p['nombre']}, Precio: {p['precio']}, Stock: {p['stock']}")
-        
-Filtro(productos)
+    
+Filtro(productos)   
