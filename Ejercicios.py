@@ -19,4 +19,24 @@ def Promedio(listas):
     peor = min(listas, key=listas.get)
     print(f"Calificación más alta: {listas[mejor]} ({mejor})")
     print(f"Calificación más baja: {listas[peor]} ({peor})")
-Promedio(calificaciones)
+#Promedio(calificaciones)
+
+def Lista():
+    lista = input("Introduce los numeros separados por un espacio:")
+    ListaCompleta = []
+    pares = []
+    impares = []
+
+    nuevalista =[int(l) for l in  lista.split(" ")]
+    for l in nuevalista:
+        if l % 2 == 0:
+            pares.append(l)
+        else:
+            impares.append(l)
+    ListaCompleta = nuevalista
+    
+    print(f"Lista completa: {nuevalista}")
+    print(f"Pares: {pares}")
+    print(f"Impares: {impares}")  
+    
+Lista()
