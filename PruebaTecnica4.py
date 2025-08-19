@@ -8,7 +8,6 @@ estudiantes = [
 
 def GestionarEstudiantes(estudiantes , operaciones):
     for operacion in operaciones:
-        #print(operacion)
         if operacion[0] == 'nota':
             encontrado = False
             for estudiante in estudiantes:
@@ -58,4 +57,4 @@ operaciones = [
 ]
 
 GestionarEstudiantes(estudiantes , operaciones)
-print ("a")
+print ("a") 
