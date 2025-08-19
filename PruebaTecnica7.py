@@ -46,6 +46,21 @@ def ReservaDeSalas(salas, operaciones):
                 else:
                     reservas_str = "Sin reservas"
                 print(f"{sala['nombre']} (Capacidad: {sala['capacidad']}) → Reservas: {reservas_str}")
+        if operacion[0] == 'cancelar':
+            print("\n")
+            flag = False
+            for sala in salas:
+                if sala['nombre'].lower() == operacion[1].lower():
+                    hora = operacion[2]
+                    if hora in sala['reservas_detalle']:
+                        del sala['reservas_detalle'][hora]
+                        print(f" Reserva en {sala['nombre']} a las {hora} cancelada.")
+                    else:
+                        print(f" No hay reserva en {sala['nombre']} a las {hora} para cancelar.")
+                        flag = True
+                        break
+            if not flag:
+                print("Sala no encontrada") 
 
-        
+
 ReservaDeSalas(salas, operaciones)
